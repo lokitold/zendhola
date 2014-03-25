@@ -7,6 +7,10 @@ class IndexController extends Zend_Controller_Action
     {
         /* Initialize action controller here */
     }
+    public function indexAction()
+    {
+        
+    }
     public function blank_pageAction()
     {
         
