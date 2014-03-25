@@ -11,15 +11,15 @@ class IndexController extends Zend_Controller_Action
     {
         
     }
-    public function blank_pageAction()
+    public function blankpageAction()
     {
         
     }
-    public function bootstrap_elementsAction()
+    public function bootstrapelementsAction()
     {
         
     } 
-    public function bootstrap_gridAction()
+    public function bootstrapgridAction()
     {
         
     }
