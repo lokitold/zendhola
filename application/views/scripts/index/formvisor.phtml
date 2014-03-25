@@ -1,5 +1,6 @@
 
 
+
 <div id="page-wrapper">
 
     <div class="row">
@@ -24,62 +25,42 @@
 
 
 
+          
 
 
-<!--            <div class="col-lg-6">
-                <h1>form 1</h1>
-                <form role="form">
-                    <div class="form-group">
-                        <label for="ejemplo_email_1">Email</label>
-                        <input type="email" class="form-control" id="ejemplo_email_1"
-                               placeholder="Introduce tu email">
-                    </div>
-                    <div class="form-group">
-                        <label for="ejemplo_password_1">Contraseña</label>
-                        <input type="password" class="form-control" id="ejemplo_password_1" 
-                               placeholder="Contraseña">
-                    </div>
-                    <div class="form-group">
-                        <label for="ejemplo_archivo_1">Adjuntar un archivo</label>
-                        <input type="file" id="ejemplo_archivo_1">
-                        <p class="help-block">Ejemplo de texto de ayuda.</p>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox"> Activa esta casilla
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-default">Enviar</button>
-                </form>
+<!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
 
-                 Form 
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Registrese</h4>
+      </div>
+      <div class="modal-body">
+        
+        
+        
+        
 
-                <h1>form 2</h1>
-                <form class="form-inline" role="form">
-                    <div class="form-group">
-                        <label class="sr-only" for="ejemplo_email_2">Email</label>
-                        <input type="email" class="form-control" id="ejemplo_email_2"
-                               placeholder="Introduce tu email">
-                    </div>
-                    <div class="form-group">
-                        <label class="sr-only" for="ejemplo_password_2">Contraseña</label>
-                        <input type="password" class="form-control" id="ejemplo_password_2" 
-                               placeholder="Contraseña">
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox"> No cerrar sesión
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-default">Entrar</button>
-                </form>
-                 Form 
 
-            </div>-->
-
-            <div class="col-lg-8">
-                <h1>Registrese</h1>
                 <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="form_visor_nombre" class="col-lg-2 control-label">Nombre</label>
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control input-sm" id="form_visor_nombre" placeholder="Nombre">
+                        </div>
+                    </div>
+                      <div class="form-group">
+                        <label for="form_visor_apellidos" class="col-lg-2 control-label">Apellidos</label>
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control input-sm" id="form_visor_apellidos" placeholder="Apellidos">
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label for="ejemplo_email_3" class="col-lg-2 control-label">Email</label>
                         <div class="col-lg-8">
@@ -95,6 +76,13 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label for="ejemplo_password_4" class="col-lg-2 control-label">Repetir Contraseña</label>
+                        <div class="col-lg-8">
+                            <input type="password" class="form-control input-sm" id="ejemplo_password_4" 
+                                   placeholder="Repetir Contraseña">
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <div class="col-lg-offset-2 col-lg-8">
                             <button type="submit" class="btn btn-default">Entrar</button>
                         </div>
@@ -102,8 +90,30 @@
                 </form>
                 <!-- Form -->
 
-            </div>
 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div><!-- /.modal-body -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
 
 
 
@@ -140,4 +150,8 @@
     </div><!-- /.row -->
 
 </div><!-- /#page-wrapper -->
+
+
+
+
 
