@@ -41,7 +41,7 @@ class IndexController extends Zend_Controller_Action
     }
     public function formvisorAction()
     {
-        
+     //echo $this->baseUrl('public/images/mifoto.jpg');   
     }
     public function testAction()
     {
