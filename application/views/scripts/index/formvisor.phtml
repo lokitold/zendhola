@@ -1,222 +1,281 @@
 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Dashboard - SB Admin</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="http://zendhola.local/admin/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Add custom CSS here -->
+        <link href="http://zendhola.local/admin/css/sb-admin.css" rel="stylesheet">
+        <link href="http://zendhola.local/admin/css/visor.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://zendhola.local/admin/font-awesome/css/font-awesome.min.css">
+        <!-- Page Specific CSS -->
+        <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
 
 
-<div id="page-wrapper">
+    </head>
 
-    <div class="row">
-        <div class="col-lg-12">
-            <h1>Visor Page <small>PeruQuiosco</small></h1>
-            <ol class="breadcrumb">
-                <li><a href="index.html"><i class="icon-dashboard"></i> Dashboard</a></li>
-                <li class="active"><i class="icon-file-alt"></i> Visor Page</li>
-            </ol>
+    <body>
 
 
+        <div id="page-wrapper">
 
-<!--             Button trigger modal 
-            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                Formulario
-            </button>
-
-             Modal 
-            <form class="form-horizontal" role="form">
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title" id="myModalLabel">Registrese</h4>
-                            </div>
-                            <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Visor Page <small>PeruQuiosco</small></h1>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html"><i class="icon-dashboard"></i> Dashboard</a></li>
+                        <li class="active"><i class="icon-file-alt"></i> Visor Page</li>
+                    </ol>
 
 
 
-
-
-
-
-                                <div class="form-group">
-                                    <label for="form_visor_nombre" class="col-lg-2 control-label">Nombre</label>
-                                    <div class="col-lg-8">
-                                        <input type="text" class="form-control input-sm" id="form_visor_nombre" placeholder="Nombre">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="form_visor_apellidos" class="col-lg-2 control-label">Apellidos</label>
-                                    <div class="col-lg-8">
-                                        <input type="text" class="form-control input-sm" id="form_visor_apellidos" placeholder="Apellidos">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ejemplo_email_3" class="col-lg-2 control-label">Email</label>
-                                    <div class="col-lg-8">
-                                        <input type="email" class="form-control input-sm" id="ejemplo_email_3"
-                                               placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ejemplo_password_3" class="col-lg-2 control-label">Contraseña</label>
-                                    <div class="col-lg-8">
-                                        <input type="password" class="form-control input-sm" id="ejemplo_password_3" 
-                                               placeholder="Contraseña">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ejemplo_password_4" class="col-lg-2 control-label">Repetir Contraseña</label>
-                                    <div class="col-lg-8">
-                                        <input type="password" class="form-control input-sm" id="ejemplo_password_4" 
-                                               placeholder="Repetir Contraseña">
-                                    </div>
-                                </div>
+                    <!--             Button trigger modal 
+                                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    Formulario
+                                </button>
+                    
+                                 Modal 
+                                <form class="form-horizontal" role="form">
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title" id="myModalLabel">Registrese</h4>
+                                                </div>
+                                                <div class="modal-body">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                                                     <div class="form-group">
-                                                        <div class="col-lg-offset-2 col-lg-8">
-                                                            <button type="submit" class="btn btn-default">Entrar</button>
+                                                        <label for="form_visor_nombre" class="col-lg-2 control-label">Nombre</label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" class="form-control input-sm" id="form_visor_nombre" placeholder="Nombre">
                                                         </div>
                                                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            </div> /.modal-body 
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Registrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-             Form -->
-
-
-
-
-
-
-            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
-                Registrarse
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="myModalLabel">Continuar</h4>
-                        </div>
-                        <div class="modal-body">
-
-
-                            <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a  href="http://www.peruquiosco.pe">
-                                                Iniciar session
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <!--                                    <div id="collapseOne" class="panel-collapse collapse in">
-                                                                            <div class="panel-body">
-                                                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                    <div class="form-group">
+                                                        <label for="form_visor_apellidos" class="col-lg-2 control-label">Apellidos</label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" class="form-control input-sm" id="form_visor_apellidos" placeholder="Apellidos">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="ejemplo_email_3" class="col-lg-2 control-label">Email</label>
+                                                        <div class="col-lg-8">
+                                                            <input type="email" class="form-control input-sm" id="ejemplo_email_3"
+                                                                   placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="ejemplo_password_3" class="col-lg-2 control-label">Contraseña</label>
+                                                        <div class="col-lg-8">
+                                                            <input type="password" class="form-control input-sm" id="ejemplo_password_3" 
+                                                                   placeholder="Contraseña">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="ejemplo_password_4" class="col-lg-2 control-label">Repetir Contraseña</label>
+                                                        <div class="col-lg-8">
+                                                            <input type="password" class="form-control input-sm" id="ejemplo_password_4" 
+                                                                   placeholder="Repetir Contraseña">
+                                                        </div>
+                                                    </div>
+                                                                        <div class="form-group">
+                                                                            <div class="col-lg-offset-2 col-lg-8">
+                                                                                <button type="submit" class="btn btn-default">Entrar</button>
                                                                             </div>
-                                                                        </div>-->
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                                Registrarse
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <form class="form-horizontal" role="form">
-                                                <div class="form-group">
-                                                    <label for="form_visor_nombre" class="col-lg-2 control-label">Nombre</label>
-                                                    <div class="col-lg-8">
-                                                        <input type="text" class="form-control input-sm" id="form_visor_nombre" placeholder="Nombre">
-                                                    </div>
+                                                                        </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                                                </div> /.modal-body 
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <button type="submit" class="btn btn-primary">Registrar</button>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label for="form_visor_apellidos" class="col-lg-2 control-label">Apellidos</label>
-                                                    <div class="col-lg-8">
-                                                        <input type="text" class="form-control input-sm" id="form_visor_apellidos" placeholder="Apellidos">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="ejemplo_email_3" class="col-lg-2 control-label">Email</label>
-                                                    <div class="col-lg-8">
-                                                        <input type="email" class="form-control input-sm" id="ejemplo_email_3"
-                                                               placeholder="Email">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="ejemplo_password_3" class="col-lg-2 control-label">Contraseña</label>
-                                                    <div class="col-lg-8">
-                                                        <input type="password" class="form-control input-sm" id="ejemplo_password_3" 
-                                                               placeholder="Contraseña">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="ejemplo_password_4" class="col-lg-2 control-label">Repetir Contraseña</label>
-                                                    <div class="col-lg-8">
-                                                        <input type="password" class="form-control input-sm" id="ejemplo_password_4" 
-                                                               placeholder="Repetir Contraseña">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="col-lg-offset-2 col-lg-8">
-                                                        <button type="submit" class="btn btn-default">Registrar</button>
-                                                    </div>
-                                                </div>
-                                            </form><!-- Form -->    
+                                            </div>
                                         </div>
                                     </div>
+                                </form>
+                                 Form -->
+
+
+
+
+
+
+                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
+                        Registrarse
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!--                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4 class="modal-title" id="myModalLabel">Continuar</h4>
+                                                        </div>-->
+                                <div class="modal-body">
+
+
+                                    <div class="panel-group" id="accordion">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a  href="http://www.peruquiosco.pe">
+                                                        Iniciar session 
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <!--                                    <div id="collapseOne" class="panel-collapse collapse in">
+                                                                                    <div class="panel-body">
+                                                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                                                    </div>
+                                                                                </div>-->
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo5">
+                                                        Registrarse
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwo" class="panel-collapse collapse_in">
+
+                                                <div class="panel-body">
+                                                    <div class="regis_red">
+                                                        <a href="http://peruid.pe/registros/redesociales/portada" class="go_peruid" data-redirect="http://elcomercio.peruquiosco.pe/confirmacion-trial" data-end-redirect="http://elcomercio.peruquiosco.pe/confirmacion-trial">
+                                                            <ul>
+                                                                <li class="red_s">Regístrate con tu red social</li>
+                                                                <li class="flech"></li>
+                                                                <li class="g_plustrial">
+                                                                    <span></span>
+                                                                </li>
+                                                                <li class=" fb_trial">
+                                                                    <span></span>
+                                                                </li>
+                                                                <li class=" tw_trial">
+                                                                    <span></span>
+                                                                </li>
+                                                                <li class="link_trial mright0 ">
+                                                                    <span></span>
+                                                                </li>
+                                                            </ul>
+                                                        </a>    
+                                                    </div>
+                                                    <form class="form-horizontal" role="form">
+                                                        <div class="form-group">
+                                                            <label for="form_visor_nombre" class="col-lg-2 control-label">Nombre</label>
+                                                            <div class="col-lg-8">
+                                                                <input type="text" class="form-control input-sm" id="form_visor_nombre" placeholder="Nombre">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="form_visor_apellidos" class="col-lg-2 control-label">Apellidos</label>
+                                                            <div class="col-lg-8">
+                                                                <input type="text" class="form-control input-sm" id="form_visor_apellidos" placeholder="Apellidos">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="ejemplo_email_3" class="col-lg-2 control-label">Email</label>
+                                                            <div class="col-lg-8">
+                                                                <input type="email" class="form-control input-sm" id="ejemplo_email_3"
+                                                                       placeholder="Email">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="ejemplo_password_3" class="col-lg-2 control-label">Contraseña</label>
+                                                            <div class="col-lg-8">
+                                                                <input type="password" class="form-control input-sm" id="ejemplo_password_3" 
+                                                                       placeholder="Contraseña">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="ejemplo_password_4" class="col-lg-2 control-label">Repetir Contraseña</label>
+                                                            <div class="col-lg-8">
+                                                                <input type="password" class="form-control input-sm" id="ejemplo_password_4" 
+                                                                       placeholder="Repetir Contraseña">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-lg-offset-2 col-lg-8">
+                                                                <button type="submit" class="btn btn-default">Registrar</button>
+                                                            </div>
+                                                        </div>
+                                                    </form><!-- Form -->    
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+
+
                                 </div>
-
-
-
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <!--                            <button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
                             </div>
-
-
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <!--                            <button type="button" class="btn btn-primary">Save changes</button>-->
                         </div>
                     </div>
+
+
+
+
+
+
                 </div>
             </div>
+        </div><!-- /.row -->
+
+    </div><!-- /#page-wrapper -->
 
 
 
 
 
+    <!-- JavaScript -->
+    <script src="http://zendhola.local/admin/js/jquery-1.10.2.js"></script>
+    <script src="http://zendhola.local/admin/js/bootstrap.js"></script>
 
-        </div>
-    </div>
-</div><!-- /.row -->
-
-</div><!-- /#page-wrapper -->
-
-
-
+    <!-- Page Specific Plugins -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+    <script src="http://zendhola.local/admin/js/morris/chart-data-morris.js"></script>
+    <script src="http://zendhola.local/admin/js/tablesorter/jquery.tablesorter.js"></script>
+    <script src="http://zendhola.local/admin/js/tablesorter/tables.js"></script>
 
 
+</body>
+</html>

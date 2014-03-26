@@ -1,0 +1,54 @@
+.modal-content {
+  background-color: #cccccc;
+}
+.modal-header {
+  background-color: #FDC01A;
+}
+h4, .h4, h5, .h5, h6, .h6 {
+    color: #111111;
+    font-weight: bold;
+}
+.modal-footer {
+    padding: 9px 10px 10px;
+}
+ .modal-body {
+    padding: 20px 20px 0;
+}
+
+.regis_red {
+    background: none repeat scroll 0 0 #FDC01A;
+    border: 1px solid #CD9501;
+    display: inline-block;
+    width: 99%;
+    margin-bottom: 20px;
+}
+.regis_red ul {
+    display: inline-block;
+    padding: 3% 0 2% 3%;
+    width: 96%;
+}
+ol, ul {
+    list-style: none outside none;
+}
+.regis_red ul li.red_s {
+    color: #111111;
+    font-weight: bold;
+    padding-top: 3px;
+}
+.regis_red ul li {
+    float: left;
+    margin-right: 2.5%;
+}
+
+
+.regis_red ul li.flech {
+    background: url("../../img/list_social.png?20130923") repeat scroll 0 2px rgba(0, 0, 0, 0);
+    height: 17px;
+    width: 17px;
+}
+
+.regis_red ul li {
+    float: left;
+    margin-right: 2.5%;
+}
+

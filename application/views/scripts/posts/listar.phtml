@@ -1,0 +1,16 @@
+<div>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>Titulo</td>
+            <td>Fecha</td>
+        </tr>
+        <?php if(count($this->posts)):?>
+           
+        <?php else:?>
+        <tr>
+            <td colspan='3'>No hay datos</td>
+        </tr>
+        <?php endif;?>
+    </table>
+</div>

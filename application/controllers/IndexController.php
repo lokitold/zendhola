@@ -42,6 +42,7 @@ class IndexController extends Zend_Controller_Action
     public function formvisorAction()
     {
      //echo $this->baseUrl('public/images/mifoto.jpg');   
+        $this->_helper->layout->disableLayout();
     }
     public function testAction()
     {
