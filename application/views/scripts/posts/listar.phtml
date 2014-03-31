@@ -1,4 +1,5 @@
 <div>
+    <a href="/posts/agregar">Agregar</a>
     <table>
         <tr>
             <td>Id</td>
@@ -6,7 +7,13 @@
             <td>Fecha</td>
         </tr>
         <?php if(count($this->posts)):?>
-           
+            <?php foreach ($this->posts as $post) :?>
+        <tr>
+            <td><?php echo $post->id;?></td>
+            <td><?php echo $post->title;?></td>
+            <td><?php echo $post->created_at;?></td>
+        </tr>        
+            <?php endforeach;?>
         <?php else:?>
         <tr>
             <td colspan='3'>No hay datos</td>
