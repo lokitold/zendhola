@@ -3,7 +3,8 @@ class Application_Form_Post extends Zend_Form{
 	public function init(){
 		$this->addElement(
 			'text','title',array(
-					'label' => 'Titulo'
+				'label' => 'Titulo',
+                                'required' => true
 				)
 		);
 		$this->addElement(
