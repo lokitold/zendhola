@@ -2,26 +2,42 @@
 
 
 <div id="page-wrapper">
-    <a href="/posts/agregar">Agregar</a>
-    <table class="table">
-        <tr>
-            <td>Id</td>
-            <td>Titulo</td>
-            <td>Fecha</td>
-        </tr>
-        <?php if(count($this->posts)):?>
-            <?php foreach ($this->posts as $post) :?>
-        <tr>
-            <td><?php echo $post->id;?></td>
-            <td><?php echo $post->title;?></td>
-            <td><?php echo $post->created_at;?></td>
-        </tr>        
-            <?php endforeach;?>
-        <?php else:?>
-        <tr>
-            <td colspan='3'>No hay datos</td>
-        </tr>
-        <?php endif;?>
-    </table>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3><a href="/posts/agregar">Agregar</a></h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-8">
+            <div class="table-responsive">
+
+                <table class="table  table-bordered table-hover">
+                    <tr>
+                        <th>Id</th>
+                        <th>Titulo</th>
+                        <th>Fecha</th>
+                    </tr>
+                    <?php if (count($this->posts)): ?>
+                        <?php foreach ($this->posts as $post) : ?>
+                            <tr>
+                                <td><?php echo $post->id; ?></td>
+                                <td><?php echo $post->title; ?></td>
+                                <td><?php echo $post->created_at; ?></td>
+                            </tr>        
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <tr>
+                            <td colspan='3'>No hay datos</td>
+                        </tr>
+                    <?php endif; ?>
+                </table>
+
+            </div>
+        </div>
+        <div class="col-lg-2">
+        </div>
+    </div>
 </div><!-- /#page-wrapper -->
 
