@@ -8,6 +8,9 @@ class PostsController extends Zend_Controller_Action {
     
     public function agregarAction(){
         $form =new Application_Form_Post();
+        $form->setAttrib('id', 'login');
+        $form->setAttrib('class', 'form-horizontal');
+        $form->setAttrib('role', 'form');
         $this->view->form = $form;
         if($this->getRequest()->isPost()){
             if($form->isvalid($this->_getAllParams())){
