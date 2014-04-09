@@ -9,15 +9,20 @@ class Application_Model_Posts extends Zend_Db_Table_Abstract {
         return $this->fetchAll();
     }
 
-    public function save($bind) {
-//        echo "<pre>";
-//        print_r($bind);
-//        echo "</pre>";
-        $row = $this->createRow();
-//         $row->title = $bind['title'];
-//         $row->full_text = $bind['full_text'];
+    public function save($bind, $id = null) {
+        if (is_null($id))
+            $row = $this->createRow();
+        else {
+            $row = $this->getRow($id);
+        }
         $row->setFromArray($bind);
         return $row->save();
+    }
+
+    public function getRow($id) {
+        $id = (int) $id;
+        $row = $this->find($id)->current();
+        return $row;
     }
 
 }
