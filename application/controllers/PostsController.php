@@ -9,7 +9,9 @@ class PostsController extends Zend_Controller_Action {
         if($this->_hasParam('page')){
             $paginator->setCurrentPageNumber($this->_getParam('page'));
         }
-        
+//        echo "<pre>";
+//        print_r($paginator);
+//        echo "</pre>";
         $this->view->paginator=$paginator;
     }
     
